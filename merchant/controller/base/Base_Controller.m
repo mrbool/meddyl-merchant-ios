@@ -12,7 +12,7 @@
         NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
         NSString* ip_address = [Utilities getIPAddress];
         
-        merchant_service = @"http://api.meddyl.com/1.10/services/MerchantService.svc/";
+        merchant_service = @"https://api.meddyl.com/1.10/services/MerchantService.svc/";
         
         application_type_obj = [[Application_Type alloc] init];
         application_type_obj.application_type_id = [NSNumber numberWithInt:4];

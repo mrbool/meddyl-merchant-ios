@@ -57,6 +57,8 @@
 /* public methods */
 -(void) Create_Layout
 {
+    [[contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
     CGFloat certificate_text_width = (self.screen_indent_width * .75);
     CGFloat certificate_text_x = ((self.screen_width * .5) - (certificate_text_width * .5));
     txtValidationCode = [Coding Create_Text_Field:@"" format_type:@"number" characters:@4 width:certificate_text_width height:(self.screen_height/10) font:text_field_font_large];

@@ -33,7 +33,8 @@
     
     if(!self.loaded)
     {
-        txvDescription.placeholder = self.system_controller.system_settings_obj.customer_description_default;
+        txvDescription.placeholder = self.system_controller.system_settings_obj.merchant_description_default;
+        [lblCharacterCount setText:[NSString stringWithFormat:@"%ld%@",(long)[self.system_controller.system_settings_obj.merchant_description_characters integerValue], @" characters left"]];
     }
     
     self.loaded = YES;
@@ -60,7 +61,7 @@
 
 -(void)textViewDidChange:(UITextView *)textView
 {
-    lblCharacterCount.text=[NSString stringWithFormat:@"%lu%@",[self.system_controller.system_settings_obj.customer_description_characters integerValue]-textView.text.length, @" characters left"];
+    lblCharacterCount.text=[NSString stringWithFormat:@"%u%@",[self.system_controller.system_settings_obj.merchant_description_characters integerValue]-textView.text.length, @" characters left"];
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
@@ -90,7 +91,7 @@
     txvDescription.delegate = self;
     [Coding Add_View:contentView view:txvDescription x:self.screen_indent_x height:txvDescription.frame.size.height prev_frame:lblDescription.frame gap:12];
     
-    lblCharacterCount = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@",(long)[self.system_controller.system_settings_obj.customer_description_characters integerValue], @" characters left"] width:self.screen_indent_width font:[UIFont fontWithName:@"AvenirNext-Medium" size:18] mult:YES];
+    lblCharacterCount = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@",(long)[self.system_controller.system_settings_obj.merchant_description_characters integerValue], @" characters left"] width:self.screen_indent_width font:[UIFont fontWithName:@"AvenirNext-Medium" size:18] mult:YES];
     [lblCharacterCount setTextAlignment:NSTextAlignmentRight];
     [Coding Add_View:contentView view:lblCharacterCount x:self.screen_indent_x height:lblCharacterCount.frame.size.height prev_frame:txvDescription.frame gap:10];
     

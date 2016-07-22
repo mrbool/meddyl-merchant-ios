@@ -196,9 +196,7 @@
              }
              else
              {
-                 UIFont* font_no_deals = [UIFont fontWithName:@"Palatino-Italic" size:(self.label_font_height * 1.25)];
-                 
-                 GTLabel *lblNoDeals = [Coding Create_Label:@"You have not posted any deals\n\nPull down to refresh\n\n" width:self.screen_width font:font_no_deals mult:YES];
+                 GTLabel *lblNoDeals = [Coding Create_Label:@"You have not posted any deals\n\nPull down to refresh\n\n\n\n\n\n" width:self.screen_width font:label_font mult:YES];
                  lblNoDeals.frame = CGRectMake(0, self.screen_height/3, lblNoDeals.frame.size.width, lblNoDeals.frame.size.height);
                  [lblNoDeals setTextAlignment:NSTextAlignmentCenter];
                  

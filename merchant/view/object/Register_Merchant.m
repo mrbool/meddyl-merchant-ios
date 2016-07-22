@@ -68,6 +68,8 @@
     [Coding Add_View:contentView view:txtCompanyPhone x:self.screen_indent_x height:txtCompanyPhone.frame.size.height prev_frame:txtCompanyName.frame gap:(self.gap)];
     
     txtWebsite = [Coding Create_Text_Field:@"Website" format_type:@"website" characters:@100 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtWebsite.keyboardType = UIKeyboardTypeURL;
+    txtWebsite.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtWebsite x:self.screen_indent_x height:txtWebsite.frame.size.height prev_frame:txtCompanyPhone.frame gap:(self.gap)];
     
     pkvIndustry = [Coding Create_Picker:@"Industry" format_type:@"" characters:@100 width:self.screen_indent_width height:self.text_field_height font:text_field_font];

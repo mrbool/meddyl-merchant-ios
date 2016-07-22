@@ -67,6 +67,7 @@
     CGFloat certificate_text_x = ((self.screen_width * .5) - (certificate_text_width * .5));
     txtCertificateCode = [Coding Create_Text_Field:@"" format_type:@"" characters:@8 width:certificate_text_width height:(self.screen_height * .1) font:text_field_font_large];
     [txtCertificateCode addTarget:self action:@selector(Check_Code) forControlEvents:UIControlEventEditingChanged];
+    txtCertificateCode.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
     [Coding Add_View:contentView view:txtCertificateCode x:certificate_text_x height:txtCertificateCode.frame.size.height prev_frame:lblCertificateCode.frame gap:(self.gap * 5)];
     
     [self Add_View:self.screen_width height:[self Get_Scroll_Height:txtCertificateCode.frame scroll_lag:0] background_color:[UIColor clearColor]];

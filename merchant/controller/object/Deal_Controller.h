@@ -105,6 +105,10 @@
 @property (nonatomic, copy) NSMutableArray *zip_code_obj_array;
 
 
+/* custom */
+@property (nonatomic, copy) NSMutableArray *deal_fine_print_option_obj_array_all;
+
+
 - (void)Verify_Deal:(void(^)(void))completionBlock;
 - (void)Add_Deal:(void(^)(void))completionBlock;
 - (void)Send_Deal_Validation:(void(^)(void))completionBlock;

@@ -22,7 +22,7 @@
     self.right_button = @"next";
     
     [self Set_Controller_Properties];
-
+    
     [self Create_Layout];
 }
 
@@ -31,8 +31,31 @@
     [super viewWillAppear:YES];
     
     if(!self.loaded)
-        [self Set_View_Properties];
-    
+    {
+        if(self.deal_controller.deal_obj.deal_id == nil)
+        {
+            [self Set_View_Properties];
+        }
+        else
+        {
+            fine_print_option_obj_array_all = [[NSMutableArray alloc]init];
+            for (NSDictionary *fine_print_option_obj_deal in self.deal_controller.deal_obj.fine_print_option_obj_array)
+            {
+                Fine_Print_Option *fine_print_option = [[Fine_Print_Option alloc]init];
+                
+                fine_print_option.option_id = [fine_print_option_obj_deal objectForKey:@"option_id"];
+                fine_print_option.display = [fine_print_option_obj_deal objectForKey:@"display"];
+                fine_print_option.value = [fine_print_option_obj_deal objectForKey:@"value"];
+                fine_print_option.is_selected = [fine_print_option_obj_deal objectForKey:@"is_selected"];
+                fine_print_option.is_active = [fine_print_option_obj_deal objectForKey:@"is_active"];
+                fine_print_option.order_id = [fine_print_option_obj_deal objectForKey:@"order_id"];
+                    
+                [fine_print_option_obj_array_all addObject:fine_print_option];
+            }
+            
+            [tblOptions reloadData];
+        }
+    }
     self.loaded = YES;
 }
 
@@ -60,7 +83,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    BOOL selected_on_modified = NO;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil)
@@ -69,25 +91,6 @@
     }
     
     Fine_Print_Option *fine_print_option_obj = fine_print_option_obj_array_all[indexPath.row];
-
-    if((self.deal_controller.deal_obj.deal_id != nil) && (!self.loaded))
-    {
-        for (NSDictionary *fine_print_option_obj_deal in self.deal_controller.deal_obj.fine_print_option_obj_array)
-        {
-            NSNumber *option_id =[fine_print_option_obj_deal objectForKey:@"option_id"];
-            NSNumber *is_selected =[fine_print_option_obj_deal objectForKey:@"is_selected"];
-            
-            if((option_id == fine_print_option_obj.option_id) &&([is_selected  isEqual: @1]))
-            {
-                selected_on_modified = YES;
-            }
-//            // For each dictionary, iterate through its keys
-//            for (id key in fine_print_option_obj_deal)
-//            {
-//                int value = [fine_print_option_obj_deal objectForKey:key];
-//            }
-        }
-    }
     
     UIView* viewCell = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screen_width, self.screen_height * .12)];
     viewCell.backgroundColor = [UIColor whiteColor];
@@ -100,18 +103,9 @@
     CGFloat checkbox_width = (self.screen_width * .1);
     CGFloat checkbox_x = self.screen_width - checkbox_width - (self.screen_indent_x * 2);
     CGFloat checkbox_y = ((viewCell.frame.size.height/2) - (checkbox_width/2));
-    BOOL checked_state;
-    if((self.deal_controller.deal_obj.deal_id != nil) && (!self.loaded))
-        checked_state = selected_on_modified;
-    else
-        checked_state = [fine_print_option_obj.is_selected boolValue];
-
-//    UISwitch* sw = [[UISwitch alloc] initWithFrame:CGRectMake(checkbox_x, checkbox_y, checkbox_width, checkbox_width)];
-//    [sw setOn:checked_state];
-//    [sw setTag:indexPath.row];
-//    [Coding Add_View:viewCell view:sw x:checkbox_x height:sw.frame.size.height prev_frame:CGRectNull gap:checkbox_y];
-//    [sw addTarget:self action:@selector(setState:) forControlEvents:UIControlEventValueChanged];
     
+    BOOL checked_state = [fine_print_option_obj.is_selected boolValue];
+
     M13Checkbox *chkFinePrint = [Coding Create_Checkbox:[fine_print_option_obj.option_id integerValue] selected:checked_state width:checkbox_width];
     [chkFinePrint setCheckState:checked_state];
     [chkFinePrint setTag:indexPath.row];
@@ -140,17 +134,12 @@
     
     Fine_Print_Option *fine_print_option_obj = fine_print_option_obj_array_all[current_switch.tag];
     
-    
     if(state == YES)
         fine_print_option_obj.is_selected = @1;
     else
         fine_print_option_obj.is_selected = @0;
     
     fine_print_option_obj_array_all[current_switch.tag] = fine_print_option_obj;
-    
-    
-//    fine_print_option_obj.is_selected = [NSNumber numberWithBool:checkbox.selected];
-//    fine_print_option_obj_array_all[checkbox.tag] = fine_print_option_obj;
 }
 
 
@@ -160,12 +149,10 @@
     UISwitch *current_switch = (UISwitch*)sender;
     
     BOOL state = [sender isOn];
-    NSString *rez = state == YES ? @"YES" : @"NO";
-    NSLog(rez);
+//    NSString *rez = state == YES ? @"YES" : @"NO";
     
     Fine_Print_Option *fine_print_option_obj = fine_print_option_obj_array_all[current_switch.tag];
  
-    
     if(state == YES)
         fine_print_option_obj.is_selected = @1;
     else
@@ -208,8 +195,6 @@
          {
              fine_print_option_obj_array_all = self.system_controller.fine_print_option_obj_array;
              
-             //checkboxes = [[NSMutableArray alloc] init];
-             
              [tblOptions reloadData];
          }
          else
@@ -224,26 +209,12 @@
 {
     [super Next_Click];
 
-//    NSMutableArray *fine_print_option_obj_array = [[NSMutableArray alloc] init];
-//    
-//    int index=0;
-//    for (M13Checkbox * chkFinePrint in checkboxes)
-//    {
-//        if (chkFinePrint.checkState == YES)
-//        {
-//            [fine_print_option_obj_array addObject:fine_print_option_obj_array_all[index]];
-//        }
-//
-//        index++;
-//    }
-    
     NSMutableArray *fine_print_option_obj_array = [[NSMutableArray alloc] init];
     for (Fine_Print_Option *fine_print_option_obj in fine_print_option_obj_array_all)
     {
         if([fine_print_option_obj.is_selected  isEqual: @1])
             [fine_print_option_obj_array addObject:fine_print_option_obj];
     }
-    
     
     self.deal_controller.deal_obj.fine_print_option_obj_array = fine_print_option_obj_array;
     

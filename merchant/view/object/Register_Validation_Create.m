@@ -60,12 +60,16 @@
 -(void)Create_Layout
 {
     txtFirstName = [Coding Create_Text_Field:@"First Name" format_type:@"name" characters:@100 width:self.screen_indent_width_half height:self.text_field_height font:text_field_font];
+    txtFirstName.autocapitalizationType = UITextAutocapitalizationTypeWords;
     [Coding Add_View:contentView view:txtFirstName x:self.screen_indent_x height:txtFirstName.frame.size.height prev_frame:CGRectNull gap:(self.gap * 7)];
     
     txtLastName = [Coding Create_Text_Field:@"Last Name" format_type:@"name" characters:@100 width:self.screen_indent_width_half height:self.text_field_height font:text_field_font];
+    txtLastName.autocapitalizationType = UITextAutocapitalizationTypeWords;
     [Coding Add_View:contentView view:txtLastName x:self.screen_indent_x_right height:txtLastName.frame.size.height prev_frame:CGRectNull gap:(self.gap * 7)];
     
     txtEmail = [Coding Create_Text_Field:@"Email" format_type:@"email" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtEmail.keyboardType = UIKeyboardTypeEmailAddress;
+    txtEmail.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtEmail x:self.screen_indent_x height:txtEmail.frame.size.height prev_frame:txtLastName.frame gap:(self.gap)];
     
     txtPhone = [Coding Create_Text_Field:@"Phone" format_type:@"phone" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
@@ -176,21 +180,32 @@
                  
                  if(successful)
                  {
-                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Validation" message:system_successful_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                     [alert show];
-                     
-                     if(vc_register_validate == nil)
+                     GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Validation" message:system_successful_obj.message cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                     alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
                      {
-                         vc_register_validate = [[Register_Validate alloc]init];
-                     }
-                     vc_register_validate.merchant_controller = self.merchant_controller;
-                     vc_register_validate.system_controller = self.system_controller;
-
-                     [self.navigationController pushViewController:vc_register_validate animated:YES];
+                         if (cancelled)
+                         {
+                             [self resignFirstResponder];
+                             
+                             if(vc_register_validate == nil)
+                             {
+                                 vc_register_validate = [[Register_Validate alloc]init];
+                             }
+                             vc_register_validate.merchant_controller = self.merchant_controller;
+                             vc_register_validate.system_controller = self.system_controller;
+                             
+                             if(![self.navigationController.topViewController isKindOfClass:[Register_Validate class]])
+                             {
+                                 [self.navigationController pushViewController:vc_register_validate animated:YES];
+                             }
+                         }
+                     };
+                     
+                     [alert show];
                  }
                  else
                  {
-                     GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Validation" message:system_error_obj.message cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                     GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message cancelButtonTitle:@"OK" otherButtonTitles:nil];
                      
                      alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
                      {

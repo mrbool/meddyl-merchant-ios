@@ -89,6 +89,8 @@
     [Coding Add_View:contentView view:lblPhone x:self.screen_indent_x height:[Utilities Get_Height:lblPhone] prev_frame:lblName.frame gap:self.gap];
 
     txtEmail = [Coding Create_Text_Field:@"Email" format_type:@"email" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtEmail.keyboardType = UIKeyboardTypeEmailAddress;
+    txtEmail.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtEmail x:self.screen_indent_x height:txtEmail.frame.size.height prev_frame:lblPhone.frame gap:(self.gap * 3)];
     
     txtPassword = [Coding Create_Text_Field:@"Password" format_type:@"password" characters:@50 width:self.screen_indent_width height:self.text_field_height font:text_field_font];

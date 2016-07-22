@@ -28,9 +28,25 @@
     [self Set_Controller_Properties];
     
     [self Create_Layout];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *forgot_password_email = [defaults objectForKey:@"forgot_password_email"];
+    [txtEmail setText:forgot_password_email];
+    [Utilities Clear_NSDefaults];
     
     if([self debug])
         [self Debug];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +61,8 @@
 -(void)Create_Layout
 {
     txtEmail = [Coding Create_Text_Field:@"Email" format_type:@"email" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtEmail.keyboardType = UIKeyboardTypeEmailAddress;
+    txtEmail.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtEmail x:self.screen_indent_x height:txtEmail.frame.size.height prev_frame:CGRectNull gap:(self.gap * 10)];
     
     txtPassword = [Coding Create_Text_Field:@"Password" format_type:@"password" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];

@@ -87,9 +87,9 @@
     else
         neighborhood = merchant_obj.neighborhood_obj.neighborhood;
 
-    GTLabel *lblCompanyName = [Coding Create_Label:merchant_obj.company_name width:self.screen_width font:label_font_large mult:NO];
+    GTLabel *lblCompanyName = [Coding Create_Label:merchant_obj.company_name width:self.screen_indent_width font:label_font_large mult:NO];
     [lblCompanyName setTextAlignment:NSTextAlignmentCenter];
-    [Coding Add_View:contentView view:lblCompanyName x:0 height:lblCompanyName.frame.size.height prev_frame:CGRectNull gap:(self.gap * 2)];
+    [Coding Add_View:contentView view:lblCompanyName x:self.screen_indent_x height:lblCompanyName.frame.size.height prev_frame:CGRectNull gap:(self.gap * 2)];
 
     GTLabel *lblNeighborhood = [Coding Create_Label:neighborhood width:self.screen_width font:label_font mult:NO];
     [lblNeighborhood setTextAlignment:NSTextAlignmentCenter];
@@ -103,6 +103,8 @@
     imvLogo.layer.borderWidth = 1.0f;
     imvLogo.layer.borderColor = [[UIColor lightGrayColor] CGColor];
  
+    CGRect prev_frame = imvLogo.frame;
+    
     /* stars image */
     CGFloat star_width = self.screen_width * .5;
     CGFloat star_x = self.screen_width * .25;
@@ -116,20 +118,29 @@
         [imvLogo setImage:img];
         [Coding Add_View:contentView view:imvLogo x:self.screen_width * .25 height:image_width prev_frame:lblNeighborhood.frame gap:(self.gap * 5)];
         
-        imgStars.image = [UIImage imageNamed:@"rating_four_star.png"];
+        imgStars.image = [UIImage imageNamed:@"rating_four_half_star.png"];
         [Coding Add_View:contentView view:imgStars x:star_x height:imgStars.frame.size.height prev_frame:imvLogo.frame gap:(self.gap * 5)];
+        
+        prev_frame = imgStars.frame;
     }
     else
     {
         [imvLogo sd_setImageWithURL:[NSURL URLWithString:merchant_obj.image] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
         [Coding Add_View:contentView view:imvLogo x:self.screen_width * .25 height:image_width prev_frame:lblNeighborhood.frame gap:(self.gap * 5)];
         
-        imgStars.image = [UIImage imageNamed:merchant_obj.merchant_rating_obj.image];
-        [Coding Add_View:contentView view:imgStars x:star_x height:imgStars.frame.size.height prev_frame:imvLogo.frame gap:(self.gap * 5)];
+        prev_frame = imvLogo.frame;
+        
+        if (merchant_obj.merchant_rating_obj.image != nil)
+        {
+            imgStars.image = [UIImage imageNamed:merchant_obj.merchant_rating_obj.image];
+            [Coding Add_View:contentView view:imgStars x:star_x height:imgStars.frame.size.height prev_frame:imvLogo.frame gap:(self.gap * 5)];
+            
+            prev_frame = imgStars.frame;
+        }
     }
     
     GTLabel *lblDescription = [Coding Create_Label:merchant_obj.description width:self.screen_indent_width font:label_font mult:YES];
-    [Coding Add_View:contentView view:lblDescription x:self.screen_indent_x height:[Utilities Get_Height:lblDescription] prev_frame:imgStars.frame gap:(self.gap * 7)];
+    [Coding Add_View:contentView view:lblDescription x:self.screen_indent_x height:[Utilities Get_Height:lblDescription] prev_frame:prev_frame gap:(self.gap * 7)];
 
     UIView *vwLine1 = [[UIView alloc] initWithFrame:CGRectMake(0, self.screen_width, scrollView.bounds.size.width, 1)];
     vwLine1.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];

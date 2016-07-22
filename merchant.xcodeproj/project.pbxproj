@@ -142,7 +142,6 @@
 		5EB345581CD2743400207BA7 /* SMS_Template.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3451E1CD2743400207BA7 /* SMS_Template.m */; };
 		5EB345591CD2743400207BA7 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB345201CD2743400207BA7 /* State.m */; };
 		5EB3455A1CD2743400207BA7 /* System_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB345221CD2743400207BA7 /* System_Error.m */; };
-		5EB3455B1CD2743400207BA7 /* System_Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB345241CD2743400207BA7 /* System_Settings.m */; };
 		5EB3455C1CD2743400207BA7 /* System_Successful.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB345261CD2743400207BA7 /* System_Successful.m */; };
 		5EB3455D1CD2743400207BA7 /* System_Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB345281CD2743400207BA7 /* System_Users.m */; };
 		5EB3455E1CD2743400207BA7 /* Time_Zone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3452A1CD2743400207BA7 /* Time_Zone.m */; };
@@ -178,6 +177,7 @@
 		5EE936B91C73B95C0012BF2F /* Register_Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE936B81C73B95C0012BF2F /* Register_Description.m */; };
 		5EE936BF1C74CB8C0012BF2F /* Certificate_Lookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE936BE1C74CB8C0012BF2F /* Certificate_Lookup.m */; };
 		5EE936C21C74CBA60012BF2F /* Certificate_Redeem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE936C11C74CBA60012BF2F /* Certificate_Redeem.m */; };
+		5EFB9D8C1D3C5FFF00EA5E55 /* System_Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB9D8B1D3C5FFF00EA5E55 /* System_Settings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -455,8 +455,6 @@
 		5EB345201CD2743400207BA7 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		5EB345211CD2743400207BA7 /* System_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Error.h; sourceTree = "<group>"; };
 		5EB345221CD2743400207BA7 /* System_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System_Error.m; sourceTree = "<group>"; };
-		5EB345231CD2743400207BA7 /* System_Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Settings.h; sourceTree = "<group>"; };
-		5EB345241CD2743400207BA7 /* System_Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System_Settings.m; sourceTree = "<group>"; };
 		5EB345251CD2743400207BA7 /* System_Successful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Successful.h; sourceTree = "<group>"; };
 		5EB345261CD2743400207BA7 /* System_Successful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System_Successful.m; sourceTree = "<group>"; };
 		5EB345271CD2743400207BA7 /* System_Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Users.h; sourceTree = "<group>"; };
@@ -509,6 +507,8 @@
 		5EE936BE1C74CB8C0012BF2F /* Certificate_Lookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Certificate_Lookup.m; sourceTree = "<group>"; };
 		5EE936C01C74CBA60012BF2F /* Certificate_Redeem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Certificate_Redeem.h; sourceTree = "<group>"; };
 		5EE936C11C74CBA60012BF2F /* Certificate_Redeem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Certificate_Redeem.m; sourceTree = "<group>"; };
+		5EFB9D8A1D3C5FFF00EA5E55 /* System_Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Settings.h; sourceTree = "<group>"; };
+		5EFB9D8B1D3C5FFF00EA5E55 /* System_Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System_Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1196,8 +1196,8 @@
 				5EB345201CD2743400207BA7 /* State.m */,
 				5EB345211CD2743400207BA7 /* System_Error.h */,
 				5EB345221CD2743400207BA7 /* System_Error.m */,
-				5EB345231CD2743400207BA7 /* System_Settings.h */,
-				5EB345241CD2743400207BA7 /* System_Settings.m */,
+				5EFB9D8A1D3C5FFF00EA5E55 /* System_Settings.h */,
+				5EFB9D8B1D3C5FFF00EA5E55 /* System_Settings.m */,
 				5EB345251CD2743400207BA7 /* System_Successful.h */,
 				5EB345261CD2743400207BA7 /* System_Successful.m */,
 				5EB345271CD2743400207BA7 /* System_Users.h */,
@@ -1530,12 +1530,12 @@
 				5EB3452F1CD2743400207BA7 /* Application_Type.m in Sources */,
 				5E712DE91CC13E4800F42E2F /* GTTextFieldDate.m in Sources */,
 				5E712DF91CC13E4800F42E2F /* SDWebImageDownloaderOperation.m in Sources */,
-				5EB3455B1CD2743400207BA7 /* System_Settings.m in Sources */,
 				5E881EB81C401D2900E45302 /* Register_Location.m in Sources */,
 				5E712DF51CC13E4800F42E2F /* SDImageCache.m in Sources */,
 				5E712DFA1CC13E4800F42E2F /* SDWebImageManager.m in Sources */,
 				5E3978181C455B7F000F8515 /* Deals.m in Sources */,
 				5E712DED1CC13E4800F42E2F /* Utilities.m in Sources */,
+				5EFB9D8C1D3C5FFF00EA5E55 /* System_Settings.m in Sources */,
 				5EE4A4F91C78BFCE00CCC70F /* Credit_Card_Add.m in Sources */,
 				5EE4A50E1C7BA75400CCC70F /* Contact_Edit.m in Sources */,
 				5E712DEC1CC13E4800F42E2F /* UITextView+Placeholder.m in Sources */,

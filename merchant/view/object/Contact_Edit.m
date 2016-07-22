@@ -68,6 +68,8 @@
     [Coding Add_View:contentView view:lblPhone x:self.screen_indent_x height:lblPhone.frame.size.height prev_frame:txtFirstName.frame gap:self.gap];
     
     txtEmail = [Coding Create_Text_Field:@"Email" format_type:@"email" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtEmail.keyboardType = UIKeyboardTypeEmailAddress;
+    txtEmail.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtEmail x:self.screen_indent_x height:txtEmail.frame.size.height prev_frame:lblPhone.frame gap:(self.gap * 5)];
     
     txtTitle = [Coding Create_Text_Field:@"Title" format_type:@"" characters:@100 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
@@ -221,10 +223,10 @@
     
     if(self.edited)
     {
-        GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"You have unsaved changes, are you sure you want to cancel?" cancelButtonTitle:@"Yes" otherButtonTitles:@[@"No"]];
+        GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"You have unsaved changes, are you sure you want to cancel?" cancelButtonTitle:@"No" otherButtonTitles:@[@"Yes"]];
         alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
         {
-            if (cancelled)
+            if (!cancelled)
             {
                 [self.view endEditing:YES];
                 [self.navigationController popViewControllerAnimated:TRUE];

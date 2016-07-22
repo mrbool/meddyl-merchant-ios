@@ -31,7 +31,8 @@
     
     [self Progress_Show:@"Loading"];
     
-    [self Create_Layout];
+    //[self Create_Layout];
+    [self Load_Data];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -54,6 +55,32 @@
 
 
 /* public methods */
+
+-(void)Load_Data
+{
+    [self Progress_Show:@"Loading"];
+    
+    self.deal_controller.merchant_contact_obj = self.merchant_controller.merchant_contact_obj;
+    [self.deal_controller Get_Deal_Details:^(void)
+     {
+         successful = self.deal_controller.successful;
+         system_successful_obj = self.deal_controller.system_successful_obj;
+         system_error_obj = self.deal_controller.system_error_obj;
+         
+         if(successful)
+         {
+             [self Create_Layout];
+         }
+         else
+         {
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+             [alert show];
+         }
+         
+         [self Progress_Close];
+     }];
+}
+
 -(void)Create_Layout
 {
     [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -74,7 +101,7 @@
     [Coding Add_View:contentView view:lblDealLabel x:self.screen_indent_x height:[Utilities Get_Height:lblDealLabel] prev_frame:imvLogo.frame gap:(self.gap * 5)];
     
     GTLabel *lblDeal = [Coding Create_Label:self.deal_controller.deal_obj.deal width:self.screen_indent_width font:label_font mult:NO];
-    [Coding Add_View:contentView view:lblDeal x:self.screen_indent_x height:lblDeal.frame.size.height prev_frame:lblDealLabel.frame gap:0];
+    [Coding Add_View:contentView view:lblDeal x:self.screen_indent_x height:lblDeal.frame.size.height prev_frame:lblDealLabel.frame gap:self.gap * 2];
     
     UIView *vwLine1 = [[UIView alloc] initWithFrame:CGRectMake(self.screen_indent_x, 0, self.screen_indent_width, 1)];
     vwLine1.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];
@@ -89,7 +116,7 @@
     [expiration_date_format setTimeZone:[NSTimeZone timeZoneWithAbbreviation:time_zone]];
     [expiration_date_format setDateFormat:@"M/d/yyyy"];
     GTLabel *lblExpirationDate = [Coding Create_Label:[expiration_date_format stringFromDate:expiration_date] width:self.screen_indent_width font:label_font mult:NO];
-    [Coding Add_View:contentView view:lblExpirationDate x:self.screen_indent_x height:[Utilities Get_Height:lblExpirationDate] prev_frame:lblExpirationLabel.frame gap:0];
+    [Coding Add_View:contentView view:lblExpirationDate x:self.screen_indent_x height:[Utilities Get_Height:lblExpirationDate] prev_frame:lblExpirationLabel.frame gap:self.gap * 2];
     
     UIView *vwLine2 = [[UIView alloc] initWithFrame:CGRectMake(self.screen_indent_x, 0, self.screen_indent_width, 1)];
     vwLine2.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];
@@ -99,7 +126,7 @@
     [Coding Add_View:contentView view:lblStatusLabel x:self.screen_indent_x height:[Utilities Get_Height:lblStatusLabel] prev_frame:vwLine2.frame gap:(self.gap * 5)];
     
     GTLabel *lblStatus = [Coding Create_Label:self.deal_controller.deal_obj.deal_status_obj.status width:self.screen_indent_width font:label_font mult:NO];
-    [Coding Add_View:contentView view:lblStatus x:self.screen_indent_x height:[Utilities Get_Height:lblStatus] prev_frame:lblStatusLabel.frame gap:0];
+    [Coding Add_View:contentView view:lblStatus x:self.screen_indent_x height:[Utilities Get_Height:lblStatus] prev_frame:lblStatusLabel.frame gap:self.gap * 2];
     
     if([self.deal_controller.deal_obj.deal_status_obj.status_id isEqualToNumber:[NSNumber numberWithInt:5]])
     {    btnValidate = [[ACPButton alloc]init];
@@ -125,7 +152,7 @@
     GTLabel *lblStatsLabel = [Coding Create_Label:@"STATS" width:self.screen_indent_width font:label_font mult:NO];
     [Coding Add_View:contentView view:lblStatsLabel x:self.screen_indent_x height:[Utilities Get_Height:lblStatsLabel] prev_frame:vwLine3.frame gap:(self.gap * 5)];
     
-    GTLabel *lblCertificatesIssued = [Coding Create_Label:[NSString stringWithFormat:@"%@%@", [self.deal_controller.deal_obj.certificate_quantity stringValue], @" certificates issued"] width:self.screen_indent_width font:label_font mult:YES];
+    GTLabel *lblCertificatesIssued = [Coding Create_Label:[NSString stringWithFormat:@"%@%@", [self.deal_controller.deal_obj.certificate_quantity stringValue], @" certificates created"] width:self.screen_indent_width font:label_font mult:YES];
     [Coding Add_View:contentView view:lblCertificatesIssued x:self.screen_indent_x height:[Utilities Get_Height:lblCertificatesIssued] prev_frame:lblStatsLabel.frame gap:(self.gap * 2)];
     
     GTLabel *lblCertificatesBought = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@", (long)[self.deal_controller.deal_obj.certificates_sold integerValue], @" certificates bought"] width:self.screen_indent_width font:label_font mult:YES];
@@ -134,15 +161,18 @@
     GTLabel *lblCertificatesRedeemed = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@", (long)[self.deal_controller.deal_obj.certificates_redeemed integerValue], @" certificates redeemed"] width:self.screen_indent_width font:label_font mult:YES];
     [Coding Add_View:contentView view:lblCertificatesRedeemed x:self.screen_indent_x height:[Utilities Get_Height:lblCertificatesRedeemed] prev_frame:lblCertificatesBought.frame gap:0];
     
+    GTLabel *lblCertificatesRemaining = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@", (long)[self.deal_controller.deal_obj.certificates_remaining integerValue], @" certificates remaining"] width:self.screen_indent_width font:label_font mult:YES];
+    [Coding Add_View:contentView view:lblCertificatesRemaining x:self.screen_indent_x height:[Utilities Get_Height:lblCertificatesRemaining] prev_frame:lblCertificatesRedeemed.frame gap:0];
+    
     UIView *vwLine4 = [[UIView alloc] initWithFrame:CGRectMake(self.screen_indent_x, 0, self.screen_indent_width, 1)];
     vwLine4.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];
-    [Coding Add_View:contentView view:vwLine4 x:self.screen_indent_x height:1 prev_frame:lblCertificatesRedeemed.frame gap:(self.gap * 5)];
+    [Coding Add_View:contentView view:vwLine4 x:self.screen_indent_x height:1 prev_frame:lblCertificatesRemaining.frame gap:(self.gap * 5)];
     
     GTLabel *lblFinePrintLabel = [Coding Create_Label:@"FINE PRINT" width:self.screen_indent_width font:label_font mult:NO];
     [Coding Add_View:contentView view:lblFinePrintLabel x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrintLabel] prev_frame:vwLine4.frame gap:(self.gap * 5)];
     
     GTLabel *lblFinePrint = [Coding Create_Label:self.deal_controller.deal_obj.fine_print_ext width:self.screen_indent_width font:label_font mult:YES];
-    [Coding Add_View:contentView view:lblFinePrint x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrint] prev_frame:lblFinePrintLabel.frame gap:0];
+    [Coding Add_View:contentView view:lblFinePrint x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrint] prev_frame:lblFinePrintLabel.frame gap:self.gap * 3];
     
     prev_frame = lblFinePrint.frame;
     

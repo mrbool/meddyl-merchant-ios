@@ -76,7 +76,7 @@
 
 -(void)Create_Layout
 {
-    [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [[contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
 
     /* grab data */
     [self.merchant_controller Get_Merchant_Contact:^(void)
@@ -161,11 +161,11 @@
                       vwLine1.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];
                       [Coding Add_View:contentView view:vwLine1 x:self.screen_indent_x height:1 prev_frame:lblExpirationDate.frame gap:(self.gap * 7)];
                       
-                      GTLabel *lblFinePrintLabel = [Coding Create_Label:@"FINE PRINT" width:self.screen_indent_width font:label_font mult:YES];
+                      GTLabel *lblFinePrintLabel = [Coding Create_Label:@"FINE PRINT" width:self.screen_indent_width font:label_font_medium mult:YES];
                       [Coding Add_View:contentView view:lblFinePrintLabel x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrintLabel] prev_frame:vwLine1.frame gap:(self.gap * 7)];
                       
                       GTLabel *lblFinePrint = [Coding Create_Label:deal_obj.fine_print_ext width:self.screen_indent_width font:label_font mult:YES];
-                      [Coding Add_View:contentView view:lblFinePrint x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrint] prev_frame:lblFinePrintLabel.frame gap:(self.gap)];
+                      [Coding Add_View:contentView view:lblFinePrint x:self.screen_indent_x height:[Utilities Get_Height:lblFinePrint] prev_frame:lblFinePrintLabel.frame gap:(self.gap * 4)];
                       
                       UIView *vwLine2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screen_indent_width, 1)];
                       vwLine2.backgroundColor = [UIColor colorWithRed:190.0/255.0 green:190.0/255 blue:190.0/255.0 alpha:1];
@@ -235,7 +235,7 @@
                       [btnWebsite addTarget:self action:@selector(btnWebsite_Click:) forControlEvents:UIControlEventTouchUpInside];
                       [Coding Add_View:contentView view:btnWebsite x:self.screen_indent_x height:btnWebsite.frame.size.height prev_frame:btnPhone.frame gap:(self.gap * 5)];
                       
-                      [self Add_View:self.screen_width height:[self Get_Scroll_Height:btnWebsite.frame scroll_lag:self.button_height] background_color:[UIColor whiteColor]];
+                      [self Add_View:self.screen_width height:[self Get_Scroll_Height:btnWebsite.frame scroll_lag:self.button_height + self.gap] background_color:[UIColor whiteColor]];
                       
                       /* add layer on top of view */
                       CGFloat nav_bar_height = self.navigationController.navigationBar.frame.size.height;
@@ -253,6 +253,8 @@
                       [btnCreate addTarget:self action:@selector(btnCreate_Click:) forControlEvents:UIControlEventTouchUpInside];
                       [Coding Add_View:self.view view:btnCreate x:0 height:btnCreate.frame.size.height prev_frame:CGRectNull gap:button_y];
 
+                      [scrollView setContentOffset:CGPointMake(0, -scrollView.contentInset.top) animated:YES];
+                      
                       [self Progress_Close];
                   }
                   else

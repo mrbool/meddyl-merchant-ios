@@ -265,9 +265,8 @@
 	system_error_obj = nil;
 	system_successful_obj = nil;
 
-	deal_obj = [[Deal alloc]init];
-
 	deal_obj.login_log_obj = self.login_log_obj;
+    deal_obj.merchant_contact_obj = merchant_contact_obj;
 
 	REST_MerchantService *i_rest = [[REST_MerchantService alloc] initWithService:merchant_service];
 	[i_rest Get_Deal_Details: deal_obj withResponse:^(JSONResponse *response)

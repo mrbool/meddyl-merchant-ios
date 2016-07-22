@@ -46,7 +46,7 @@
 {
     [super viewWillAppear:YES];
     
-    txvDescription.placeholder = self.system_controller.system_settings_obj.customer_description_default;
+    txvDescription.placeholder = self.system_controller.system_settings_obj.merchant_description_default;
 
     if(!self.loaded)
     {
@@ -205,6 +205,7 @@
     imvLogo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, image_width, image_width)];
     imvLogo.layer.cornerRadius = 6;
     imvLogo.layer.borderWidth = 1.0f;
+    imvLogo.clipsToBounds = YES;
     imvLogo.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     [Coding Add_View:contentView view:imvLogo x:self.screen_width * .25 height:image_width prev_frame:CGRectNull gap:(self.gap * 5)];
 
@@ -241,6 +242,8 @@
     [Coding Add_View:contentView view:txtPhone x:self.screen_indent_x height:txtPhone.frame.size.height prev_frame:pkvNeighborhood.frame gap:(self.gap * 5)];
     
     txtWebsite = [Coding Create_Text_Field:@"Website" format_type:@"website" characters:@100 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
+    txtWebsite.keyboardType = UIKeyboardTypeURL;
+    txtWebsite.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [Coding Add_View:contentView view:txtWebsite x:self.screen_indent_x height:txtWebsite.frame.size.height prev_frame:txtPhone.frame gap:(self.gap * 5)];
     
     [self Add_View:self.screen_width height:[self Get_Scroll_Height:txtWebsite.frame scroll_lag:0] background_color:[UIColor clearColor]];
@@ -676,10 +679,10 @@
     
     if(self.edited)
     {
-        GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"You have unsaved changes, are you sure you want to cancel?" cancelButtonTitle:@"Yes" otherButtonTitles:@[@"No"]];
+        GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"You have unsaved changes, are you sure you want to cancel?" cancelButtonTitle:@"No" otherButtonTitles:@[@"Yes"]];
         alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
         {
-            if (cancelled)
+            if (!cancelled)
             {
                 [self.view endEditing:YES];
                 [self.navigationController popViewControllerAnimated:TRUE];

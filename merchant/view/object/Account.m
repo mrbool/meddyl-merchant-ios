@@ -198,6 +198,10 @@
     [SSKeychain deletePasswordForService:@"user_name" account:@"app"];
     [SSKeychain deletePasswordForService:@"password" account:@"app"];
     
+    SDImageCache *imageCache = [SDImageCache sharedImageCache];
+    [imageCache clearMemory];
+    [imageCache clearDisk];
+    
     Main_View *vc = [[Main_View alloc] init];
     
     Navigation_Controller *nc = [[Navigation_Controller alloc] initWithRootViewController:vc];

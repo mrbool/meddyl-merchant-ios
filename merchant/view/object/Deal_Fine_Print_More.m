@@ -96,7 +96,7 @@
     txvFinePrint.delegate = self;
     [Coding Add_View:contentView view:txvFinePrint x:self.screen_indent_x height:txvFinePrint.frame.size.height prev_frame:lblFinePrint.frame gap:12];
     
-    lblCharacterCount = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@",(long)[self.system_controller.system_settings_obj.customer_description_characters integerValue], @" characters left"] width:self.screen_indent_width font:[UIFont fontWithName:@"AvenirNext-Medium" size:18] mult:YES];
+    lblCharacterCount = [Coding Create_Label:[NSString stringWithFormat:@"%ld%@",(long)[self.system_controller.system_settings_obj.merchant_description_characters integerValue], @" characters left"] width:self.screen_indent_width font:[UIFont fontWithName:@"AvenirNext-Medium" size:18] mult:YES];
     [lblCharacterCount setTextAlignment:NSTextAlignmentRight];
     [Coding Add_View:contentView view:lblCharacterCount x:self.screen_indent_x height:lblCharacterCount.frame.size.height prev_frame:txvFinePrint.frame gap:10];
 

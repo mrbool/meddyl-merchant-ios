@@ -41,8 +41,10 @@
     [super viewWillAppear:YES];
     
     /* for some reason this must be in viewWillAppear or it is distorted */
-    [self Create_Layout];
-    
+    if(!self.loaded)
+    {
+     [self Create_Layout];
+    }
     keyboardIsShown = NO;
 }
 
@@ -195,7 +197,7 @@
                                      view_size:CGSizeMake(popup_width, popup_height)
                                     input_text:self.system_controller.system_settings_obj.expiration_days_info];
     
-             if((self.deal_controller.deal_obj.deal_id != nil) &&(!self.loaded))
+             if((self.deal_controller.deal_obj.deal_id != nil) && (!self.loaded))
              {
                  sldPercentOff.value = [self.deal_controller.deal_obj.percent_off floatValue];
                  [self sldPercentOff_Changed];
@@ -309,14 +311,14 @@
     }
     else if(compare_min_dollar_value == NSOrderedAscending)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Maximum dollar amount is too low" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@%@%@%@%@", @"Maximum dollar amount is too low.\n\n", @"Value must be between ", [self.system_controller.system_settings_obj.dollar_value_min stringValue], @" and ", [self.system_controller.system_settings_obj.dollar_value_max stringValue]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         
         [txtMaxDollar becomeFirstResponder];
     }
     else if(compare_max_dollar_value == NSOrderedDescending)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Maximum dollar amount is too high" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@%@%@%@%@", @"Maximum dollar amount is too high.\n\n", @"Value must be between ", [self.system_controller.system_settings_obj.dollar_value_min stringValue], @" and ", [self.system_controller.system_settings_obj.dollar_value_max stringValue]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         
         [txtMaxDollar becomeFirstResponder];
@@ -330,14 +332,14 @@
     }
     else if(compare_min_certificate_quantity == NSOrderedAscending)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Certificate quantity too low" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@%@%@%@%@", @"Certificate quantity too low.\n\n", @"Value must be between ", [self.system_controller.system_settings_obj.certificate_quantity_min stringValue], @" and ", [self.system_controller.system_settings_obj.certificate_quantity_max stringValue]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         
         [txtCertificateQty becomeFirstResponder];
     }
     else if(compare_max_certificate_quantity == NSOrderedDescending)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Certificate quantity is too high" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@%@%@%@%@", @"Certificate quantity too high.\n\n", @"Value must be between ", [self.system_controller.system_settings_obj.certificate_quantity_min stringValue], @" and ", [self.system_controller.system_settings_obj.certificate_quantity_max stringValue]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         
         [txtCertificateQty becomeFirstResponder];
@@ -369,7 +371,7 @@
     else
     {
         [super Next_Click];
-
+        
         if(self.deal_controller.deal_obj.deal_id == nil)
         {
             deal_obj = nil;
@@ -406,10 +408,10 @@
 
 -(void) Cancel_Click
 {
-    GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"Are you sure you want to cancel?" cancelButtonTitle:@"Yes" otherButtonTitles:@[@"No"]];
+    GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Cancel" message:@"Are you sure you want to cancel?" cancelButtonTitle:@"No" otherButtonTitles:@[@"Yes"]];
     alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
     {
-        if (cancelled)
+        if (!cancelled)
         {
             deal_obj = nil;
             self.deal_controller.deal_obj = nil;

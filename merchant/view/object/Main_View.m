@@ -24,6 +24,8 @@
 {
     [super viewWillAppear:YES];
     
+    [self Progress_Show:@"Loading"];
+    
     [self Load_System_Settings];
 
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -136,6 +138,8 @@
         self.merchant_controller.contact_obj = contact_obj;
         [self.merchant_controller Login:^(void)
          {
+             [self Progress_Close];
+             
              if(self.merchant_controller.successful)
              {
                  if(self.merchant_controller.merchant_contact_obj.merchant_contact_id != nil)
@@ -153,6 +157,10 @@
                  }
              }
          }];
+    }
+    else
+    {
+        [self Progress_Close];
     }
 }
 
