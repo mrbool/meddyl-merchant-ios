@@ -117,8 +117,7 @@
          }
          else
          {
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
      }];
 }
@@ -156,10 +155,18 @@
                      [self presentViewController:tc animated:YES completion:nil];
                  }
              }
+             else
+             {
+                 [self Show_Error];
+             }
          }];
     }
     else
     {
+        self.merchant_controller.merchant_obj = nil;
+        self.merchant_controller.merchant_contact_obj = nil;
+        self.merchant_controller.contact_obj = nil;
+        
         [self Progress_Close];
     }
 }

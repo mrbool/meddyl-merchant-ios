@@ -48,6 +48,8 @@
     self.navigationController.navigationBar.topItem.leftBarButtonItem.enabled = YES;
     self.navigationController.navigationBar.topItem.rightBarButtonItem.enabled = YES;
     self.navigationController.navigationBar.topItem.backBarButtonItem.enabled = YES;
+    
+    [txtPassword becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

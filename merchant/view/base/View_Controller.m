@@ -516,4 +516,21 @@
     
 }
 
+
+-(void)Show_Error
+{
+    [self Progress_Close];
+    
+    GTAlertView *alert = [[GTAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    alert.completion = ^(BOOL cancelled, NSInteger buttonIndex)
+    {
+        if ([system_error_obj.code  isEqual: @5001])
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"itms-apps://itunes.apple.com/app/", @"id1091022062?mt=8"]]];
+        }
+    };
+    
+    [alert show];
+}
+
 @end

@@ -27,6 +27,7 @@
 @property (nonatomic, strong) Credit_Card_Type *credit_card_type_obj;
 @property (nonatomic, strong) Customer *customer_obj;
 @property (nonatomic, strong) Merchant_Contact *merchant_contact_obj;
+@property (nonatomic, strong) NSString *security_code;
 @property (nonatomic, strong) Application_Type *application_type_obj;
 @property (nonatomic, strong) Login_Log *login_log_obj;
 

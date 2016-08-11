@@ -22,6 +22,7 @@
 @synthesize credit_card_type_obj;
 @synthesize customer_obj;
 @synthesize merchant_contact_obj;
+@synthesize security_code;
 @synthesize application_type_obj;
 @synthesize login_log_obj;
 

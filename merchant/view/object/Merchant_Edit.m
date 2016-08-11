@@ -280,8 +280,7 @@
          }
          else
          {
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
          
          [self Progress_Close];
@@ -313,8 +312,7 @@
          
          if(!successful)
          {
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
      }];
 }
@@ -333,7 +331,7 @@
          
          if(successful)
          {
-             NSMutableArray *neighborhood_obj_array = self.system_controller.neighborhood_obj_array;
+             NSMutableArray *neighborhood_obj_array = self.system_controller.zip_code_obj.neighborhood_obj_array;
              pkvNeighborhood.input_array = neighborhood_obj_array;
              
              if(neighborhood_obj_array.count >= 1)
@@ -367,6 +365,7 @@
     if(txtZipCode.text.length > [@4 longLongValue])
     {
         [self Load_Neighborhood];
+        [pkvNeighborhood setHidden:NO];
     }
     else
     {
@@ -528,8 +527,7 @@
          }
          else
          {
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
      }];
 }

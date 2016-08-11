@@ -95,6 +95,7 @@
 		5E87FCA31C3B044400C733C8 /* Register_Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E87FCA11C3B044400C733C8 /* Register_Validate.m */; };
 		5E881EB81C401D2900E45302 /* Register_Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E881EB61C401D2900E45302 /* Register_Location.m */; };
 		5E881EC01C40660B00E45302 /* System_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E881EBF1C40660B00E45302 /* System_Controller.m */; };
+		5E92E7881D58BFCC00687A86 /* Credit_Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E92E7871D58BFCC00687A86 /* Credit_Card.m */; };
 		5EA173E71C61758900357C77 /* Deal_Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA173E51C61758900357C77 /* Deal_Validate.m */; };
 		5EB3442B1CCECA7F00207BA7 /* Terms_Of_Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3442A1CCECA7F00207BA7 /* Terms_Of_Service.m */; };
 		5EB344311CD0103200207BA7 /* redeem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB344301CD0103200207BA7 /* redeem@2x.png */; };
@@ -107,7 +108,6 @@
 		5EB345351CD2743400207BA7 /* Contact_GPS_Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344D81CD2743400207BA7 /* Contact_GPS_Log.m */; };
 		5EB345361CD2743400207BA7 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344DA1CD2743400207BA7 /* Contact.m */; };
 		5EB345371CD2743400207BA7 /* Credit_Card_Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344DC1CD2743400207BA7 /* Credit_Card_Type.m */; };
-		5EB345381CD2743400207BA7 /* Credit_Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344DE1CD2743400207BA7 /* Credit_Card.m */; };
 		5EB345391CD2743400207BA7 /* Customer_Search_Location_Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344E01CD2743400207BA7 /* Customer_Search_Location_Type.m */; };
 		5EB3453A1CD2743400207BA7 /* Customer_Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344E21CD2743400207BA7 /* Customer_Status.m */; };
 		5EB3453B1CD2743400207BA7 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB344E41CD2743400207BA7 /* Customer.m */; };
@@ -362,6 +362,8 @@
 		5E881EB61C401D2900E45302 /* Register_Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Register_Location.m; sourceTree = "<group>"; };
 		5E881EBE1C40660B00E45302 /* System_Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System_Controller.h; sourceTree = "<group>"; };
 		5E881EBF1C40660B00E45302 /* System_Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = System_Controller.m; sourceTree = "<group>"; };
+		5E92E7861D58BFCC00687A86 /* Credit_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credit_Card.h; sourceTree = "<group>"; };
+		5E92E7871D58BFCC00687A86 /* Credit_Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credit_Card.m; sourceTree = "<group>"; };
 		5EA173E41C61758900357C77 /* Deal_Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deal_Validate.h; sourceTree = "<group>"; };
 		5EA173E51C61758900357C77 /* Deal_Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Deal_Validate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5EB344291CCECA7F00207BA7 /* Terms_Of_Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terms_Of_Service.h; sourceTree = "<group>"; };
@@ -385,8 +387,6 @@
 		5EB344DA1CD2743400207BA7 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		5EB344DB1CD2743400207BA7 /* Credit_Card_Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credit_Card_Type.h; sourceTree = "<group>"; };
 		5EB344DC1CD2743400207BA7 /* Credit_Card_Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credit_Card_Type.m; sourceTree = "<group>"; };
-		5EB344DD1CD2743400207BA7 /* Credit_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credit_Card.h; sourceTree = "<group>"; };
-		5EB344DE1CD2743400207BA7 /* Credit_Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credit_Card.m; sourceTree = "<group>"; };
 		5EB344DF1CD2743400207BA7 /* Customer_Search_Location_Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer_Search_Location_Type.h; sourceTree = "<group>"; };
 		5EB344E01CD2743400207BA7 /* Customer_Search_Location_Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer_Search_Location_Type.m; sourceTree = "<group>"; };
 		5EB344E11CD2743400207BA7 /* Customer_Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer_Status.h; sourceTree = "<group>"; };
@@ -1124,10 +1124,10 @@
 				5EB344D81CD2743400207BA7 /* Contact_GPS_Log.m */,
 				5EB344D91CD2743400207BA7 /* Contact.h */,
 				5EB344DA1CD2743400207BA7 /* Contact.m */,
+				5E92E7861D58BFCC00687A86 /* Credit_Card.h */,
+				5E92E7871D58BFCC00687A86 /* Credit_Card.m */,
 				5EB344DB1CD2743400207BA7 /* Credit_Card_Type.h */,
 				5EB344DC1CD2743400207BA7 /* Credit_Card_Type.m */,
-				5EB344DD1CD2743400207BA7 /* Credit_Card.h */,
-				5EB344DE1CD2743400207BA7 /* Credit_Card.m */,
 				5EB344DF1CD2743400207BA7 /* Customer_Search_Location_Type.h */,
 				5EB344E01CD2743400207BA7 /* Customer_Search_Location_Type.m */,
 				5EB344E11CD2743400207BA7 /* Customer_Status.h */,
@@ -1498,7 +1498,6 @@
 				5E3D889D1C358C7C0004D621 /* AppDelegate.m in Sources */,
 				5EB345521CD2743400207BA7 /* Password_Reset.m in Sources */,
 				5EB345411CD2743400207BA7 /* Deal.m in Sources */,
-				5EB345381CD2743400207BA7 /* Credit_Card.m in Sources */,
 				5E3D88DB1C35A7160004D621 /* View_Controller.m in Sources */,
 				5E712E061CC13E4800F42E2F /* TTTAttributedLabel.m in Sources */,
 				5EB3455A1CD2743400207BA7 /* System_Error.m in Sources */,
@@ -1567,6 +1566,7 @@
 				5E3D88FC1C36F9EB0004D621 /* JSONSuccessfulResponse.m in Sources */,
 				5E39781D1C455B93000F8515 /* Deal_Create.m in Sources */,
 				5EB345591CD2743400207BA7 /* State.m in Sources */,
+				5E92E7881D58BFCC00687A86 /* Credit_Card.m in Sources */,
 				5E3D891D1C3703940004D621 /* Merchant_Controller.m in Sources */,
 				5E86757D1C3DAF4D006AC857 /* TabBar_Controller.m in Sources */,
 				5E712DE21CC13E4800F42E2F /* GTPopup.m in Sources */,
@@ -1743,7 +1743,7 @@
 				INFOPLIST_FILE = merchant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gtsoft.meddyl.merchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";

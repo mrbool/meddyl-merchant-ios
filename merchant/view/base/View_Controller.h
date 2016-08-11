@@ -88,5 +88,6 @@
 -(void)Set_Controller_Properties;
 -(CGFloat)Get_Scroll_Height: (CGRect)last_frame scroll_lag:(CGFloat)scroll_lag;
 -(void)Add_View: (CGFloat)width height:(CGFloat)height background_color:(UIColor*)background_color;
+-(void)Show_Error;
 
 @end

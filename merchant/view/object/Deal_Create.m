@@ -99,7 +99,7 @@
     UIView* view_2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.screen_width, view_height)];
     view_2.backgroundColor = [UIColor whiteColor];
 
-    GTLabel* lblMaxDollarLabel = [Coding Create_Label:@"Max Dollar Amount" width:self.screen_indent_width_half font:label_font mult:NO];
+    GTLabel* lblMaxDollarLabel = [Coding Create_Label:@"Max Dollar Value" width:self.screen_indent_width_half font:label_font mult:NO];
     label_y = (view_height/2) - ([Utilities Get_Height:lblMaxDollarLabel]/2);
     [Coding Add_View:view_2 view:lblMaxDollarLabel x:self.screen_indent_x height:[Utilities Get_Height:lblMaxDollarLabel] prev_frame:CGRectNull gap:label_y];
 
@@ -232,10 +232,7 @@
          }
          else
          {
-             [self Progress_Close];
-             
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
      }];
 }

@@ -104,8 +104,7 @@
          }
          else
          {
-             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [alert show];
+             [self Show_Error];
          }
      }];
 }
@@ -191,8 +190,7 @@
                  self.merchant_controller.merchant_contact_obj = merchant_contact_obj_update;
                  self.merchant_controller.contact_obj = merchant_contact_obj_update.contact_obj;
                  
-                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                 [alert show];
+                 [self Show_Error];
              }
          }];
     }

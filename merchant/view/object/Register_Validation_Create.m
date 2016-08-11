@@ -7,6 +7,7 @@
     GTTextField *txtLastName;
     GTTextField *txtEmail;
     GTTextField *txtPhone;
+    GTLabel *lblPhoneNote;
     
     Register_Validate *vc_register_validate;
 }
@@ -75,7 +76,7 @@
     txtPhone = [Coding Create_Text_Field:@"Phone" format_type:@"phone" characters:@200 width:self.screen_indent_width height:self.text_field_height font:text_field_font];
     [Coding Add_View:contentView view:txtPhone x:self.screen_indent_x height:txtPhone.frame.size.height prev_frame:txtEmail.frame gap:(self.gap)];
     
-    GTLabel *lblPhoneNote = [Coding Create_Label:@"Your mobile phone number will never be used, it is only for validation into the software." width:self.screen_indent_width font:label_font mult:YES];
+    lblPhoneNote = [Coding Create_Label:@"Your mobile phone number will never be used, it is only for validation into the software." width:self.screen_indent_width font:label_font mult:YES];
     [Coding Add_View:contentView view:lblPhoneNote x:self.screen_indent_x height:[Utilities Get_Height:lblPhoneNote] prev_frame:txtPhone.frame gap:(self.gap * 2)];
     
     [self Add_View:self.screen_width height:[self Get_Scroll_Height:lblPhoneNote.frame scroll_lag:0] background_color:[UIColor clearColor]];
@@ -88,6 +89,7 @@
         txtFirstName.text = [NSString stringWithFormat:@"%@ %@", self.merchant_controller.contact_obj.first_name, self.merchant_controller.contact_obj.last_name];
         txtFirstName.enabled = NO;
         [txtFirstName setBackgroundColor:[UIColor clearColor]];
+        [txtFirstName setHidden:NO];
         
         [txtLastName setHidden:YES];
         txtLastName.text = self.merchant_controller.contact_obj.last_name;

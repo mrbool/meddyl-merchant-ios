@@ -116,8 +116,7 @@
              }
              else
              {
-                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:system_error_obj.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                 [alert show];
+                 [self Show_Error];
              }
          }];
     }

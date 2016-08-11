@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Merchant.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1242,11 +1242,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Merchant.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1658,11 +1658,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417082.687978"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1674,11 +1674,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1690,11 +1690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1706,11 +1706,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1722,11 +1722,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -1850,11 +1850,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2338,11 +2338,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2354,11 +2354,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2386,11 +2386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417082.687978"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "405"
-            endingLineNumber = "405"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2514,11 +2514,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "312"
-            endingLineNumber = "312"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2530,11 +2530,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2546,11 +2546,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2562,11 +2562,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2578,11 +2578,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2594,11 +2594,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2610,11 +2610,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417233.890903"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2738,11 +2738,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -2978,11 +2978,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -3010,11 +3010,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -3084,11 +3084,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -3100,11 +3100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -3116,11 +3116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "-btnValidate_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3148,11 +3148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "-btnValidate_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3164,11 +3164,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-btnValidate_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3260,11 +3260,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417082.687978"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "375"
-            endingLineNumber = "375"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -3448,15 +3448,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Merchant_Contact.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650079.092291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -3996,11 +3996,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "304"
-            endingLineNumber = "304"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "-Load_Industry"
             landmarkType = "5">
          </BreakpointContent>
@@ -4012,11 +4012,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "305"
-            endingLineNumber = "305"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
             landmarkName = "-Load_Industry"
             landmarkType = "5">
          </BreakpointContent>
@@ -4044,11 +4044,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "302"
-            endingLineNumber = "302"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
             landmarkName = "-Load_Industry"
             landmarkType = "5">
          </BreakpointContent>
@@ -4092,11 +4092,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "-Load_Neighborhood"
             landmarkType = "5">
          </BreakpointContent>
@@ -4108,11 +4108,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "-Load_Industry"
             landmarkType = "5">
          </BreakpointContent>
@@ -4284,11 +4284,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "399"
-            endingLineNumber = "399"
+            startingLineNumber = "398"
+            endingLineNumber = "398"
             landmarkName = "-Save_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -4300,11 +4300,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "-Edit_Text"
             landmarkType = "5">
          </BreakpointContent>
@@ -4428,11 +4428,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
             landmarkName = "-Edit_Zip_Code"
             landmarkType = "5">
          </BreakpointContent>
@@ -4444,11 +4444,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "326"
-            endingLineNumber = "326"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
             landmarkName = "-Load_Neighborhood"
             landmarkType = "5">
          </BreakpointContent>
@@ -4652,11 +4652,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Validation_Create.m"
-            timestampString = "482447224.434245"
+            timestampString = "492645695.357015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -4668,11 +4668,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Validation_Create.m"
-            timestampString = "482447224.434245"
+            timestampString = "492645695.357015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -4764,11 +4764,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "406"
-            endingLineNumber = "406"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "-Save_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -4844,11 +4844,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Create.m"
-            timestampString = "490417082.687978"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "402"
-            endingLineNumber = "402"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -4956,11 +4956,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -4988,11 +4988,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Merchant_Contact.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650079.092291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -5004,11 +5004,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Register_Merchant_Contact.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650079.092291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -5132,11 +5132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Credit_Card_Add.m"
-            timestampString = "482431322.845705"
+            timestampString = "492355728.477769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-btnAdd_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5228,11 +5228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "621"
-            endingLineNumber = "621"
+            startingLineNumber = "619"
+            endingLineNumber = "619"
             landmarkName = "-Choose_Picture"
             landmarkType = "5">
          </BreakpointContent>
@@ -5244,11 +5244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "608"
-            endingLineNumber = "608"
+            startingLineNumber = "606"
+            endingLineNumber = "606"
             landmarkName = "-Take_Picture"
             landmarkType = "5">
          </BreakpointContent>
@@ -5292,11 +5292,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "492650371.747394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "386"
-            endingLineNumber = "386"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "-Save_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -5308,11 +5308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Customer_App.m"
-            timestampString = "482448011.43146"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-btnGetApp_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5340,11 +5340,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Review.m"
-            timestampString = "490417639.380503"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "-btnCreate_Click:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5704,7 +5704,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Info.m"
@@ -5836,11 +5836,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
             landmarkName = "-Load_Neighborhood"
             landmarkType = "5">
          </BreakpointContent>
@@ -5852,11 +5852,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Merchant_Edit.m"
-            timestampString = "490682934.327962"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
             landmarkName = "-Load_Neighborhood"
             landmarkType = "5">
          </BreakpointContent>
@@ -5932,11 +5932,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -5980,11 +5980,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -5996,11 +5996,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "-Next_Click"
             landmarkType = "5">
             <Locations>
@@ -6412,11 +6412,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Fine_Print.m"
-            timestampString = "490416594.798163"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-Next_Click"
             landmarkType = "5">
          </BreakpointContent>
@@ -6492,11 +6492,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "merchant/view/object/Deal_Info.m"
-            timestampString = "490815150.584128"
+            timestampString = "490909718.741193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-Create_Layout"
             landmarkType = "5">
          </BreakpointContent>
@@ -6530,6 +6530,246 @@
             startingLineNumber = "67"
             endingLineNumber = "67"
             landmarkName = "-Load_Data"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Main_View.m"
+            timestampString = "490909449.130809"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "-Auto_Login"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/controller/rest_interface/REST_MerchantService.m"
+            timestampString = "490909372.538923"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "-Get_System_Settings:withResponse:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Credit_Card_Add.m"
+            timestampString = "492355766.475098"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-btnAdd_Click:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Credit_Card_Add.m"
+            timestampString = "492355910.445082"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-btnAdd_Click:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/controller/object/Merchant_Controller.m"
+            timestampString = "492355790.144977"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
+            landmarkName = "-Add_Credit_Card:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Validation_Create.m"
+            timestampString = "492645943.531739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-Next_Click"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Main_View.m"
+            timestampString = "492645067.728849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-Auto_Login"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Merchant_Contact.m"
+            timestampString = "492650079.092291"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-Next_Click"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Merchant.m"
+            timestampString = "492646957.76905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Validation_Create.m"
+            timestampString = "492648220.069349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "-Next_Click"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Validation_Create.m"
+            timestampString = "492648652.335314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "-Next_Click"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Register_Validation_Create.m"
+            timestampString = "492648676.567914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-Next_Click"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/controller/rest_interface/REST_MerchantService.m"
+            timestampString = "492648732.346436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "418"
+            endingLineNumber = "418"
+            landmarkName = "-Create_Validation:withResponse:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/view/object/Merchant_Edit.m"
+            timestampString = "492650366.63835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "-Load_Neighborhood"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "merchant/controller/object/System_Controller.m"
+            timestampString = "492650448.809176"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-Get_Neighborhood_By_Zip:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
